@@ -929,6 +929,44 @@
 						"url": "{{env}}/admin-panel/v1/clients/{{id}}/sync"
 					},
 					"response": []
+				},
+				{
+					"name": "Get DJ PDF",
+					"id": "2c61b12e-2f9e-4bb0-a6fc-8c4f0cea2911",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://a.q.wallester.com/admin-panel/v1/dj-search/pdf?name=\"Roman Obramovich\"",
+							"protocol": "https",
+							"host": [
+								"a",
+								"q",
+								"wallester",
+								"com"
+							],
+							"path": [
+								"admin-panel",
+								"v1",
+								"dj-search",
+								"pdf"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "\"Roman Obramovich\""
+								}
+							]
+						},
+						"description": "Запрос на скачивание PDF результатов DJ search"
+					},
+					"response": []
 				}
 			],
 			"id": "dcaeff98-e968-4b27-b59f-0d3cb51eecf8",
